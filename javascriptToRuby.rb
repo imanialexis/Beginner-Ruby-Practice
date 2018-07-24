@@ -121,3 +121,19 @@ elsif (num == 2)
 else
     puts 'Your number doesnt matter :p'
 end 
+
+# 'Merica
+# Create a method that takes a string as an argument and adds the phrase “Only in America!” to the end of it
+
+def addMerica (sentence)
+    puts sentence << ', only in America!'
+end
+
+addMerica('Pineapple belongs on pizza')
+
+# Create a method called maxValue to find the maximum value in an array of numbers. For instance: [100,10,-1000] should return 100.
+
+list_of_numbers = [100,10,-1000]
+list_of_numbers = list_of_numbers.sort.last
+p list_of_numbers
+
