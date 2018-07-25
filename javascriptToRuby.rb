@@ -79,6 +79,12 @@ while i <= 10 do
     i += 1
   end
 
+#### OR
+
+for num in 1..10
+    puts num
+end
+
 #   Print out all the names in an array of objects
 # otherArray.forEach(function(el){ console.log(el.name) });
 
@@ -137,3 +143,37 @@ list_of_numbers = [100,10,-1000]
 list_of_numbers = list_of_numbers.sort.last
 p list_of_numbers
 
+
+# arr1 = [:toyota, :tesla]
+# arr2 = ['Prius', 'Model S']
+
+# def conversion(arg1,arg2)
+#     p [arg1,arg2].transpose.to_h
+# end
+
+# p conversion(arr1,arr2)
+
+## OR
+
+arr1 = [:toyota, :tesla]
+arr2 = ['Prius', 'Model S']
+
+def conversion2(arr1,arr2)
+    obj = {}
+    arr1.each_with_index do |car, model|
+    obj[car] = arr2[model]
+  end
+  return obj
+end
+
+p conversion2(arr1,arr2)
+
+
+# Write a method called shout that accepts a varying number of strings and puts the uppercased version of each string. For example, shout(“is anybody there”, “are you listening?”) should display “IS ANYBODY THERE” and “ARE YOU LISTENING?” on the screen.
+
+def shout *string
+    string.each do |word|
+    end
+end
+
+shout 'gucci gang','gucci gang','gucci gang'
